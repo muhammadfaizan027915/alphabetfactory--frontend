@@ -1,6 +1,6 @@
 const ForgetPassCard = () => {
   return (
-    <div className="py-5 px-6 bg-white w-[90%] sm:w-[75%] lg:max-w-[400px] m-auto rounded-[2rem] ">
+    <div className="py-5 px-6 bg-white w-[95%] sm:w-[75%] lg:max-w-[400px] m-auto rounded-[2rem] ">
       <h1 className="mb-6 font-semibold text-4xl text-center">
         Forget Password
       </h1>

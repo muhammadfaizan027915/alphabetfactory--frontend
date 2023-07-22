@@ -1,6 +1,6 @@
 const LoginCard = () => {
   return (
-    <div className="py-10 px-6 h-fit bg-white w-[90%] sm:w-[75%] lg:max-w-[400px] m-aut rounded-[2rem] ">
+    <div className="py-10 px-6 h-fit bg-white w-[95%] sm:w-[75%] lg:max-w-[400px] m-aut rounded-[2rem] ">
       <h1 className="mb-6 uppercase font-semibold text-4xl text-center">
         Login
       </h1>
