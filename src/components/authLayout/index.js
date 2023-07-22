@@ -1,8 +1,8 @@
 const AuthLayout = ({ children, backgroundImageUrl, isDarkLogo }) => {
   return (
-    <div className="p-2 sm:p-[5%] min-w-[100vw] min-h-[100vh] overflow-auto bg-black">
-      <div className="max-h-[100vh] rounded-3xl lg:rounded-none overflow-hidden flex">
-        <div className="hidden lg:block lg:w-1/2 lg:relative">
+    <div className="p-2 min-w-[100vw] min-h-[100vh] flex justify-center items-center overflow-auto bg-black">
+      <div className="h-full w-full max-w-[1080px] rounded-3xl lg:rounded-none overflow-hidden flex">
+        <div className="hidden max-h-[600px] lg:block lg:w-1/2 lg:relative">
           <img
             src={backgroundImageUrl}
             className="w-full h-full object-cover"
