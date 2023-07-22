@@ -11,17 +11,17 @@ const ProposalInfo = ({ onClose }) => {
       <div>
         <p className="flex flex-col sm:flex-row items-start mb-4">
           <span className="sm:w-1/5 font-bold">Client's Name:</span>{" "}
-          <span>Muhammad Faizan</span>
+          <span>XXXXXX</span>
         </p>
 
         <p className="flex flex-col sm:flex-row iitems-start mb-4">
           <span className="sm:w-1/5 font-bold">Client's Phone:</span>{" "}
-          <span>03171231341</span>
+          <span>XXXXXXXX</span>
         </p>
 
         <p className="flex flex-col sm:flex-row items-start mb-4">
           <span className="sm:w-1/5 font-bold">Client's Email:</span>
-          <span>muhammadfaizan027915@gmail.com</span>
+          <span>XXXXXXXXXX</span>
         </p>
 
         <p className="flex flex-col sm:flex-row items-startr mb-4">

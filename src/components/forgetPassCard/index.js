@@ -1,10 +1,26 @@
+import { useNavigate } from 'react-router-dom'
+
 const ForgetPassCard = () => {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) =>{
+    e.preventDefaults()
+    try{
+
+    }catch(err){
+
+    }
+  }
+  const onLoginClick= ()=>{
+    navigate('/login')
+  }
+
   return (
     <div className="py-5 px-6 bg-white w-[95%] sm:w-[75%] lg:max-w-[400px] m-auto rounded-[2rem] ">
       <h1 className="mb-6 font-semibold text-4xl text-center">
         Forget Password
       </h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-2">
           <label className="font-semibold inline-block mb-2" htmlFor="username">
             Username or an Email
@@ -27,7 +43,7 @@ const ForgetPassCard = () => {
 
       <div className="text-center">
         <p className="mt-2 font-semibold">OR</p>
-        <a className="text-red-600 font-semibold cursor-pointer uppercase">
+        <a className="text-red-600 font-semibold cursor-pointer uppercase" onClick={onLoginClick}>
           Login?
         </a>
       </div>

@@ -1,10 +1,23 @@
+import { useNavigate } from 'react-router-dom'
+
 const LoginCard = () => {
+  const navigate = useNavigate()
+  const handleSubmit= (e) =>{
+    //e.preventDefaults()
+    navigate('/proposals')
+  }
+  const onSignupClick = () =>{
+    navigate('/signup')
+  }
+  const onForgotPasswordClick = () =>{
+    navigate('/forget-password')
+  }
   return (
     <div className="py-10 px-6 h-fit bg-white w-[95%] sm:w-[75%] lg:max-w-[400px] m-aut rounded-[2rem] ">
       <h1 className="mb-6 uppercase font-semibold text-4xl text-center">
         Login
       </h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-2">
           <label className="font-semibold inline-block mb-2" htmlFor="username">
             Username or an Email
@@ -29,13 +42,14 @@ const LoginCard = () => {
           />
         </div>
         <div className="mb-6 text-end text-sm">
-          <a className="text-red-600 font-semibold cursor-pointer uppercase">
+          <a className="text-red-600 font-semibold cursor-pointer uppercase" onClick={onForgotPasswordClick}>
             Forgot your password ?
           </a>
         </div>
 
-        <div className="text-center">
-          <button className="py-2 px-8 rounded-full text-lg font-semibold text-white bg-black uppercase">
+        <div className="text-center" >
+          <button className="py-2 px-8 rounded-full text-lg font-semibold text-white bg-black uppercase"
+          type='submit'>
             Login
           </button>
         </div>
@@ -43,7 +57,7 @@ const LoginCard = () => {
 
       <div className="text-center">
         <p className="mt-2 font-semibold">OR</p>
-        <a className="text-red-600 font-semibold cursor-pointer uppercase">
+        <a className="text-red-600 font-semibold cursor-pointer uppercase" onClick={onSignupClick}>
           Sign up
         </a>
       </div>

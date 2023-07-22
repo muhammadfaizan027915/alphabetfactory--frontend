@@ -1,10 +1,26 @@
+import { useNavigate } from 'react-router-dom'
+
 const SignupCard = () => {
+  const navigate = useNavigate()
+
+  const onLoginClick= ()=>{
+    navigate('/login')
+  }
+  const handleSubmit = (e) =>{
+    //e.preventDefaults()
+    //navigate()
+    try{
+
+    }catch(err){
+
+    }
+  }
   return (
     <div className="py-5 px-6 bg-white w-[95%] sm:w-[75%] lg:max-w-[400px] m-auto rounded-[2rem] ">
       <h1 className="mb-6 uppercase font-semibold text-4xl text-center">
         Sign Up
       </h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-2">
           <label className="font-semibold inline-block" htmlFor="fullname">
             Full Name
@@ -60,16 +76,18 @@ const SignupCard = () => {
         </div>
 
         <div className=" text-center">
-          <button className="py-2 px-8 rounded-full text-lg font-semibold text-white bg-black uppercase">
-            Sign Up
+          <button className="py-2 px-8 rounded-full text-lg font-semibold text-white bg-black uppercase"
+            type="submit"
+          >
+            SIGN UP
           </button>
         </div>
       </form>
 
       <div className="text-center">
         <p className="mt-2 font-semibold">OR</p>
-        <a className="text-red-600 font-bold cursor-pointer uppercase">
-          Sign up
+        <a className="text-red-600 font-bold cursor-pointer uppercase" onClick={onLoginClick}>
+          LOG IN
         </a>
       </div>
     </div>

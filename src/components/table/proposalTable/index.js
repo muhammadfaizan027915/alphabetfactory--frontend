@@ -33,17 +33,17 @@ const ProposalTable = ({ onCraeteNew, onView, onDownload }) => {
           <tbody className="text-center ]">
             <tr className="bg-gray-200">
               <td className="py-2 rounded-s-lg w-1/5 min-w-[150px]">
-                Muhammad Faizan
+                XXXXXX
               </td>
               <td className="w-1/5 min-w-[150px]">
                 <a
                   href="mailto:muhammadfaizan027915@gmai.com"
                   className="hover:underline"
                 >
-                  muhammadfaizan027915@gmail.com
+                  XXXXXX
                 </a>
               </td>
-              <td className="w-1/5 min-w-[150px]">+92317332423</td>
+              <td className="w-1/5 min-w-[150px]">XXXXXX</td>
               <td className="w-1/5 min-w-[150px]">xxxx-xxxx-xxxx</td>
               <td className="rounded-e-lg w-1/5 min-w-[150px]">
                 <button
