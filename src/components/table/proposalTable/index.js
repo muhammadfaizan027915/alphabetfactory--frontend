@@ -1,14 +1,24 @@
+import Searchbar from "../../searchbar";
+
 const ProposalTable = ({ onCraeteNew, onView, onDownload }) => {
   return (
     <>
       <div className="mt-4 flex justify-between items-center mb-4 pl-2">
         <h2 className="text-xl font-bold">Sent Proposals</h2>
-        <button
-          className="py-2 px-4 rounded-full text-sm font-semibold text-white bg-black hover:shadow-md"
-          onClick={onCraeteNew}
-        >
-          Create New Proposal
-        </button>
+        <div className="flex sm:flex-row justify-end sm:mb-4 gap-4">
+          <div className="sm:block hidden">
+          <Searchbar />
+          </div>
+          <button
+            className="py-2 px-4 rounded-full text-sm font-semibold text-white bg-black hover:shadow-md"
+            onClick={onCraeteNew}
+          >
+            Create New Proposal
+          </button>
+        </div>
+      </div>
+      <div className="sm:hidden block mb-4">
+        <Searchbar />
       </div>
       <div className="overflow-auto">
         <table className="w-full text-sm">

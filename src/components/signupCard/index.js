@@ -13,7 +13,7 @@ const SignupCard = () => {
             type="text"
             id="fullname"
             placeholder="Enter your Full Name"
-            className="bg-gray-100 h-10 w-full border-2 rounded-lg px-4 focus:outline-none"
+            className="bg-gray-100 h-10 w-full border-2 border-gray-300 rounded-lg px-4 focus:outline-none"
           />
         </div>
 
@@ -25,7 +25,7 @@ const SignupCard = () => {
             type="email"
             id="email"
             placeholder="Enter your Email"
-            className="bg-gray-100 h-10 w-full border-2 rounded-lg px-4 focus:outline-none"
+            className="bg-gray-100 h-10 w-full border-2 border-gray-300 rounded-lg px-4 focus:outline-none"
           />
         </div>
 
@@ -37,7 +37,7 @@ const SignupCard = () => {
             type="text"
             id="username"
             placeholder="Enter your Username"
-            className="bg-gray-100 h-10 w-full border-2 rounded-lg px-4 focus:outline-none"
+            className="bg-gray-100 h-10 w-full border-2 border-gray-300 rounded-lg px-4 focus:outline-none"
           />
         </div>
 
@@ -49,7 +49,7 @@ const SignupCard = () => {
             type="password"
             id="password"
             placeholder="Enter your password"
-            className="bg-gray-100 h-10 w-full border-2 rounded-lg px-4 focus:outline-none"
+            className="bg-gray-100 h-10 w-full border-2 border-gray-300 rounded-lg px-4 focus:outline-none"
           />
         </div>
 

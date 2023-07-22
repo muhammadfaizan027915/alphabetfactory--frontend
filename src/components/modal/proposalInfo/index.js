@@ -3,11 +3,8 @@ const ProposalInfo = ({ onClose }) => {
     <div className="max-w-[90%] mx-auto sm:max-w-2xl lg:max-w-3xl p-6 rounded-3xl bg-white shadow-xl">
       <h1 className="font-bold text-2xl text-center mb-4 relative uppercase">
         Your Proposal{" "}
-        <button
-          className="absolute right-1 font-normal text-red-600"
-          onClick={onClose}
-        >
-          x
+        <button className="absolute right-1 font-normal" onClick={onClose}>
+          <span className="material-symbols-outlined text-red-600">close</span>
         </button>
       </h1>
 

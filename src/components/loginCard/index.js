@@ -13,7 +13,7 @@ const LoginCard = () => {
             type="text"
             id="username"
             placeholder="Enter your username or an email"
-            className="bg-gray-100 h-10 w-full border-2 rounded-lg px-4 focus:outline-none"
+            className="bg-gray-100 h-10 w-full border-2 border-gray-300 rounded-lg px-4 focus:outline-none"
           />
         </div>
 
@@ -25,7 +25,7 @@ const LoginCard = () => {
             type="password"
             id="password"
             placeholder="Enter your password"
-            className="bg-gray-100 h-10 w-full border-2 rounded-lg px-4 focus:outline-none"
+            className="bg-gray-100 h-10 w-full border-2 border-gray-300 rounded-lg px-4 focus:outline-none"
           />
         </div>
         <div className="mb-6 text-end text-sm">
