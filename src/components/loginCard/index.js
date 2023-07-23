@@ -1,16 +1,10 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const LoginCard = () => {
   const navigate = useNavigate()
   const handleSubmit= (e) =>{
     //e.preventDefaults()
     navigate('/proposals')
-  }
-  const onSignupClick = () =>{
-    navigate('/signup')
-  }
-  const onForgotPasswordClick = () =>{
-    navigate('/forget-password')
   }
   return (
     <div className="py-10 px-6 h-fit bg-white w-[95%] sm:w-[75%] lg:max-w-[400px] m-aut rounded-[2rem] ">
@@ -42,9 +36,9 @@ const LoginCard = () => {
           />
         </div>
         <div className="mb-6 text-end text-sm">
-          <a className="text-red-600 font-semibold cursor-pointer uppercase" onClick={onForgotPasswordClick}>
+          <Link to={"/forget-password"} className="text-red-600 font-semibold cursor-pointer uppercase">
             Forgot your password ?
-          </a>
+          </Link>
         </div>
 
         <div className="text-center" >
@@ -57,9 +51,9 @@ const LoginCard = () => {
 
       <div className="text-center">
         <p className="mt-2 font-semibold">OR</p>
-        <a className="text-red-600 font-semibold cursor-pointer uppercase" onClick={onSignupClick}>
+        <Link to={"/signup"} className="text-red-600 font-semibold cursor-pointer uppercase" >
           Sign up
-        </a>
+        </Link>
       </div>
     </div>
   );

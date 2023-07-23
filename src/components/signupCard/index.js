@@ -1,14 +1,8 @@
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const SignupCard = () => {
-  const navigate = useNavigate()
-
-  const onLoginClick= ()=>{
-    navigate('/login')
-  }
   const handleSubmit = (e) =>{
     //e.preventDefaults()
-    //navigate()
     try{
 
     }catch(err){
@@ -86,9 +80,9 @@ const SignupCard = () => {
 
       <div className="text-center">
         <p className="mt-2 font-semibold">OR</p>
-        <a className="text-red-600 font-bold cursor-pointer uppercase" onClick={onLoginClick}>
+        <Link to={"/login"} className="text-red-600 font-bold cursor-pointer uppercase">
           LOG IN
-        </a>
+        </Link>
       </div>
     </div>
   );

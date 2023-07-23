@@ -1,8 +1,6 @@
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const ForgetPassCard = () => {
-  const navigate = useNavigate()
-
   const handleSubmit = (e) =>{
     e.preventDefaults()
     try{
@@ -10,9 +8,6 @@ const ForgetPassCard = () => {
     }catch(err){
 
     }
-  }
-  const onLoginClick= ()=>{
-    navigate('/login')
   }
 
   return (
@@ -43,9 +38,9 @@ const ForgetPassCard = () => {
 
       <div className="text-center">
         <p className="mt-2 font-semibold">OR</p>
-        <a className="text-red-600 font-semibold cursor-pointer uppercase" onClick={onLoginClick}>
+        <Link to={"/login"} className="text-red-600 font-semibold cursor-pointer uppercase">
           Login?
-        </a>
+        </Link>
       </div>
     </div>
   );
