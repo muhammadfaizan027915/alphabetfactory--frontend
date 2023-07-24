@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "../../components/header";
 import ContentLayout from "../../components/contentLayout";
 import DraftTable from "../../components/table/draftTable";
 import ProposalTable from "../../components/table/proposalTable";
@@ -17,7 +16,6 @@ const ProposalsPage = () => {
   return (
     <>
       <ContentLayout>
-        <Header />
         <ProposalTable  onCraeteNew={onCraeteNewProposal} onView={onVeiwProposal} />
         <DraftTable onEdit={onCraeteNewProposal} />
       </ContentLayout>

@@ -9,6 +9,7 @@ import LoginPage from "./pages/login";
 import SignupPage from "./pages/signUp";
 import ProposalPage from "./pages/proposals"
 import ForgetPassswordPage from "./pages/forgetPassword";
+import ApprovalPage from "./pages/approvals";
 
 
 const router = createBrowserRouter(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="signup" element={<SignupPage />} />
       <Route path="forget-password" element={<ForgetPassswordPage />} />
       <Route path="proposals" element={<ProposalPage />}/>
+      <Route path="approvals" element={<ApprovalPage />} />
     </>
   )
 );
