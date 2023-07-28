@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProposalSlide from "../../../components/proposalSlide";
 import ContentLayout from "../../../components/contentLayout";
+import Cover from "../../../components/cover";
 
 const approvals = [
   {
@@ -37,13 +38,13 @@ const ApprovalPage = () => {
   const [approval, setApproval] = useState(approvals[0]);
   const [approvalIndex, setApprovalIndex] = useState(0);
   const onNext = () => {
-    const next = approvalIndex + 1
+    const next = approvalIndex + 1;
     setApprovalIndex(next < approvals.length ? next : 0);
   };
 
   const onPrev = () => {
-    const prev = approvalIndex - 1
-    setApprovalIndex(prev >= 0 ? prev : approvals.length - 1 );
+    const prev = approvalIndex - 1;
+    setApprovalIndex(prev >= 0 ? prev : approvals.length - 1);
   };
 
   useEffect(() => {
@@ -52,7 +53,13 @@ const ApprovalPage = () => {
 
   return (
     <ContentLayout>
-      <ProposalSlide approval={approval} onNext={onNext} onPrev={onPrev} />
+      <ProposalSlide
+        approval={approval}
+        onNext={onNext}
+        onPrev={onPrev}
+      >
+        <Cover />
+      </ProposalSlide>
     </ContentLayout>
   );
 };
