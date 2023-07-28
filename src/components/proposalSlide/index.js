@@ -1,19 +1,12 @@
-const ProposalSlide = ({
-  children,
-  onNext,
-  onPrev,
-}) => {
-
+const ProposalSlide = ({ children, onNext, onPrev }) => {
   return (
-    <div className="px-2 py-4 flex-shrink-0 w-full sm:px-4 bg-gray-100 rounded-3xl min-h-[calc(100vh-4rem-2rem)]">
+    <div className="px-2 py-4 flex-shrink-0 w-full sm:px-4 bg-gray-100 rounded-3xl overflow-y-auto">
       <div className="flex justify-end items-center gap-4">
-        <button className="h-[36px] px-4 text-md rounded-md font-semibold text-white bg-black uppercase">
+        <button className="h-[36px] px-4 text-md rounded-md font-semibold text-white bg-black uppercase hidden sm:block">
           Accept
         </button>
 
-        <button
-          className="py-1 px-2 h-[36px] rounded-md bg-gray-300 flex flex-col items-center"
-        >
+        <button className="py-1 px-2 h-[36px] rounded-md bg-gray-300 flex-col items-center hidden sm:flex">
           <span className="material-symbols-outlined text-[15px]">
             speaker_notes
           </span>
@@ -38,6 +31,7 @@ const ProposalSlide = ({
           </span>
         </button>
       </div>
+      <div className="w-full my-4 h-[calc(100vh-196px)] overflow-y-auto">{children}</div>
     </div>
   );
 };

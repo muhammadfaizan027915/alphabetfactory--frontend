@@ -1,7 +1,7 @@
 const Sidebar = ({ isOpen, onClose }) => {
   if (!isOpen) return;
   return (
-    <div className="w-80 h-full bg-white absolute top-0 left-0 py-4 shadow-2xl animate-move-in">
+    <div className="w-80 h-full bg-white absolute top-0 left-0 py-4 z-[100] shadow-2xl animate-move-in">
       <div className="flex justify-between items-center">
         <div className=" px-4 pb-2 w-full">
           <h2 className="font-bold">Example</h2>
@@ -13,6 +13,15 @@ const Sidebar = ({ isOpen, onClose }) => {
         </button>
       </div>
       <div className="text-sm text-black ">
+        <button className={`flex items-center gap-2 ${styles.navLink} w-full block sm:hidden`}>
+          <span className="material-symbols-outlined">done</span>
+          Accept Prooposal
+        </button>
+
+        <button className={`flex items-center gap-2 ${styles.navLink} w-full block sm:hidden`}>
+          <span className="material-symbols-outlined">speaker_notes</span>
+          <span>Question</span>
+        </button>
         <p className={styles.navLink}>
           <a className="w-full">Cover</a>
         </p>

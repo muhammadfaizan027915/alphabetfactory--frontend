@@ -5,7 +5,7 @@ const Header = ({onSidebar}) => {
     navigate("/");
   };
   return (
-    <div className="w-full h-16 px-4 sticky top-0 bg-white">
+    <div className="w-full h-16 px-4 sticky top-0 bg-white z-50">
       <div className="h-16 flex justify-between items-center">
         <div className="w-[140px] h-fit px-4 flex items-center justify-center gap-4">
           <button onClick={onSidebar}>
