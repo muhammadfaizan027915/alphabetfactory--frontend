@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProposalSlide from "../../../components/proposalSlide";
 import ContentLayout from "../../../components/contentLayout";
 import Cover from "../../../components/cover";
+import Introduction from "../../../components/introduction";
 
 const approvals = [
   {
@@ -58,7 +59,7 @@ const ApprovalPage = () => {
         onNext={onNext}
         onPrev={onPrev}
       >
-        <Cover />
+        <Introduction />
       </ProposalSlide>
     </ContentLayout>
   );
