@@ -14,7 +14,7 @@ const Introduction = () => {
           <p className="mt-4">Yours Sincerely,</p>
           <p>Muhammad Zain</p>
         </div>
-        <div className="md:w-[45%] h-80 bg-[url('/public/assets/images/backgroundImage.jpg')] bg-no-repeat bg-cover"></div>
+        <div className="md:w-[45%] min-h-80 bg-[url('/public/assets/images/backgroundImage.jpg')] bg-no-repeat bg-cover"></div>
       </div>
       <div className="flex flex-col md:flex-row md:items-stretch bg-white border-b-[20px] border-red-600 ">
         <div className="md:w-[55%] min-h-[400px] px-4 sm:px-10 mt-4">
