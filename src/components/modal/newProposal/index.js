@@ -1,12 +1,12 @@
 const NewProposal = ({onCreate, onCancel}) => {
   return (
     <div className="sm:max-w-2xl lg:max-w-3xl p-6 rounded-3xl bg-white shadow-xl">
-      <h1 className="font-bold text-2xl text-center mb-4 uppercase">
+      <h1 className="font-bold text-2xl text-center mb-4 ">
         Create New Proposal
       </h1>
 
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:flex-wrap">
-        <div className="mb-4 sm:w-[calc(50%-0.5rem)] w-full">
+      <div className="flex flex-col">
+        <div className="mb-4 ">
           <label
             className="font-semibold inline-block mb-1"
             htmlFor="clientName"
@@ -21,7 +21,7 @@ const NewProposal = ({onCreate, onCancel}) => {
           />
         </div>
 
-        <div className="mb-4 sm:w-[calc(50%-0.5rem)]">
+        <div className="mb-4">
           <label
             className="font-semibold inline-block mb-1"
             htmlFor="clientPhone"
@@ -36,7 +36,7 @@ const NewProposal = ({onCreate, onCancel}) => {
           />
         </div>
 
-        <div className="mb-4 sm:w-[calc(50%-0.5rem)]">
+        <div className="mb-4">
           <label
             className="font-semibold inline-block mb-1"
             htmlFor="clientEmail"
@@ -51,7 +51,7 @@ const NewProposal = ({onCreate, onCancel}) => {
           />
         </div>
 
-        <div className="mb-4 sm:w-[calc(50%-0.5rem)]">
+        <div className="mb-4">
           <label
             className="font-semibold inline-block mb-1"
             htmlFor="clientGst"
@@ -66,29 +66,14 @@ const NewProposal = ({onCreate, onCancel}) => {
           />
         </div>
 
-        <div className="mb-1 sm:mb-0 sm:w-[calc(50%-0.5rem)]">
-          <label
-            className="font-semibold inline-block mb-1"
-            htmlFor="proposal"
-          >
-            Your Proposal
-          </label>
-          <textarea
-            type="text"
-            id="proposal"
-            placeholder="Enter your proposal"
-            cols={"10"}
-            rows={"4"}
-            className="bg-gray-100 w-full border-2 rounded-lg px-4 py-2 resize-none focus:outline-none"
-          />
-        </div>
+        
 
-        <div className="sm:w-[calc(50%-0.5rem)] mb-2 flex justify-end items-end gap-4">
-          <button className="py-2 px-6 rounded-full text-md font-semibold text-white bg-black" onClick={onCreate}>
+        <div className="mb-2 flex justify-between items-center gap-4 mt-2">
+          <button className="h-[36px] px-6 rounded-full text-md font-semibold text-white bg-black" onClick={onCreate}>
             Create Proposal
           </button>
 
-          <button className="py-2 px-6 rounded-full text-md font-semibold text-gray-500 bg-white border-[1px] border-gray-500" onClick={onCancel}>
+          <button className="h-[36px] px-6 rounded-full text-md font-semibold text-gray-500 bg-white border-[1px] border-gray-500" onClick={onCancel}>
             Cancel
           </button>
         </div>

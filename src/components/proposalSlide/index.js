@@ -7,12 +7,12 @@ const ProposalSlide = ({
   return (
     <div className="px-2 py-4 flex-shrink-0 w-full sm:px-4 bg-gray-100 rounded-3xl min-h-[calc(100vh-4rem-2rem)]">
       <div className="flex justify-end items-center gap-4">
-        <button className="h-[38px] px-4 text-md rounded-md font-semibold text-white bg-black uppercase">
+        <button className="h-[36px] px-4 text-md rounded-md font-semibold text-white bg-black uppercase">
           Accept
         </button>
 
         <button
-          className="py-1 px-2 h-[38px] rounded-md bg-gray-300 flex flex-col items-center"
+          className="py-1 px-2 h-[36px] rounded-md bg-gray-300 flex flex-col items-center"
         >
           <span className="material-symbols-outlined text-[15px]">
             speaker_notes
@@ -20,7 +20,7 @@ const ProposalSlide = ({
           <span className="text-[8px] font-semibold">Question</span>
         </button>
 
-        <button className="h-[38px] w-10 rounded-md bg-gray-300 flex items-center justify-center">
+        <button className="h-[36px] w-10 rounded-md bg-gray-300 flex items-center justify-center">
           <span
             className="material-symbols-outlined text-lg font-semibold"
             onClick={onPrev}
@@ -30,7 +30,7 @@ const ProposalSlide = ({
         </button>
 
         <button
-          className="h-[38px] w-10 rounded-md bg-gray-300 flex items-center justify-center"
+          className="h-[36px] w-10 rounded-md bg-gray-300 flex items-center justify-center"
           onClick={onNext}
         >
           <span className="material-symbols-outlined text-lg font-semibold">

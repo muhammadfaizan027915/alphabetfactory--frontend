@@ -7,9 +7,9 @@ const ContentLayout = ({ children }) => {
   const toggleSidebar = () => setSiderbarOpen(open => !open)
   return (
     <div className="w-[100vw] h-[100vh] p-2 sm:p-3 bg-black">
-      <div className="w-full h-full px-4 rounded-3xl bg-white overflow-y-auto relative">
+      <div className="w-full h-full rounded-3xl bg-white overflow-y-auto relative">
           <Header onSidebar={toggleSidebar} />
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl px-3 mx-auto">
           {children}
         </div>
 
