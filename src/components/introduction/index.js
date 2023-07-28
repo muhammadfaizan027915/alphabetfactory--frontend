@@ -2,7 +2,7 @@ const Introduction = () => {
   return (
     <div>
       <div className="flex flex-col  md:flex-row md:items-stretch">
-        <div className="md:w-[55%] min-h-80 bg-black text-white p-8 text-justify">
+        <div className="md:w-[55%] min-h-[320px] bg-black text-white p-4 md:p-8 text-justify">
           <h3 className="text-lg font-semibold">Dear Faizan,</h3>
           <p className="font-light">
             As promised during our pleasant conversation last week, you hereby
@@ -14,7 +14,7 @@ const Introduction = () => {
           <p className="mt-4">Yours Sincerely,</p>
           <p>Muhammad Zain</p>
         </div>
-        <div className="md:w-[45%] min-h-80 bg-[url('/public/assets/images/backgroundImage.jpg')] bg-no-repeat bg-cover"></div>
+        <div className="md:w-[45%] min-h-[320px] bg-[url('/public/assets/images/backgroundImage.jpg')] bg-no-repeat bg-cover"></div>
       </div>
       <div className="flex flex-col md:flex-row md:items-stretch bg-white border-b-[20px] border-red-600 ">
         <div className="md:w-[55%] min-h-[400px] px-4 sm:px-10 mt-4">
