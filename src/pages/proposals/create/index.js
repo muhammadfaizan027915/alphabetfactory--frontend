@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ApprovalSlide from "../../components/approvalSlide";
-import ContentLayout from "../../components/contentLayout";
+import ProposalSlide from "../../../components/proposalSlide";
+import ContentLayout from "../../../components/contentLayout";
 
 const approvals = [
   {
@@ -52,10 +52,7 @@ const ApprovalPage = () => {
 
   return (
     <ContentLayout>
-      <h1 className="text-center text-2xl font-semibold py-4 uppercase">
-        Recent Approvals
-      </h1>
-      <ApprovalSlide approval={approval} onNext={onNext} onPrev={onPrev} />
+      <ProposalSlide approval={approval} onNext={onNext} onPrev={onPrev} />
     </ContentLayout>
   );
 };
