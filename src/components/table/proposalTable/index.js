@@ -21,7 +21,7 @@ const ProposalTable = ({ onCraeteNew, onView, onDownload }) => {
         <Searchbar />
       </div>
       <div className="overflow-auto">
-        <table className="w-full text-sm">
+        <table className="w-full text-sm border-y-separate border-spacing-y-4">
           <thead>
             <tr>
               <th className="pb-4">Name</th>
