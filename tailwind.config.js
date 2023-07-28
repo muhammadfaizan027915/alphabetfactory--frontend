@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       animation: {
         "modal-popup": "popup  100ms linear forwards",
+        "move-in": "movein 300ms linear forwards",
       },
 
       keyframes: {
@@ -16,6 +17,15 @@ module.exports = {
             transform: "scale(1)",
           },
         },
+
+        movein: {
+          '0%': {
+            transform: "translateX(-100%)"
+          },
+          "100%":{
+            transform: "translateX(0%)"
+          }
+        }
       },
     },
   },

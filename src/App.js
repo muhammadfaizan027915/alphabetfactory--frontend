@@ -7,10 +7,9 @@ import {
 
 import LoginPage from "./pages/login";
 import SignupPage from "./pages/signUp";
-import ProposalPage from "./pages/proposals"
+import ProposalPage from "./pages/proposals";
 import ForgetPassswordPage from "./pages/forgetPassword";
-import ApprovalPage from "./pages/approvals";
-
+import Proposal from "./pages/proposals/[id]";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,8 +18,10 @@ const router = createBrowserRouter(
       <Route path="/login" element={<LoginPage />} />
       <Route path="signup" element={<SignupPage />} />
       <Route path="forget-password" element={<ForgetPassswordPage />} />
-      <Route path="proposals" element={<ProposalPage />}/>
-      <Route path="approvals" element={<ApprovalPage />} />
+      <Route path="proposals">
+        <Route index element={<ProposalPage />} />
+        <Route path=":id" element={<Proposal />} />
+      </Route>
     </>
   )
 );
