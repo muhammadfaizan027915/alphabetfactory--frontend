@@ -1,6 +1,6 @@
 const NewProposal = ({onCreate, onCancel}) => {
   return (
-    <div className="sm:max-w-2xl lg:max-w-3xl p-6 rounded-3xl bg-white shadow-xl">
+    <div className="max-w-[90%] mx-auto sm:max-w-2xl lg:max-w-3xl p-4 rounded-3xl bg-white shadow-xl">
       <h1 className="font-bold text-2xl text-center mb-4 ">
         Create New Proposal
       </h1>

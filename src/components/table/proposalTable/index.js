@@ -13,7 +13,7 @@ const ProposalTable = ({ onCraeteNew, onView, onDownload }) => {
             className="py-2 px-4 rounded-full text-sm font-semibold text-white bg-black hover:shadow-md"
             onClick={onCraeteNew}
           >
-            Create New Proposal
+            Create Proposal
           </button>
         </div>
       </div>
