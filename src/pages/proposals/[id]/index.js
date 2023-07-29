@@ -4,6 +4,7 @@ import ContentLayout from "../../../components/contentLayout";
 import Cover from "../../../components/slides/cover";
 import Introduction from "../../../components/slides/introduction";
 import Proposal from "../../../components/slides/proposal";
+import PlanOfAction from "../../../components/slides/planOfAction";
 
 const approvals = [
   {
@@ -60,7 +61,7 @@ const ApprovalPage = () => {
         onNext={onNext}
         onPrev={onPrev}
       >
-        <Proposal />
+        <PlanOfAction />
       </ProposalSlide>
     </ContentLayout>
   );

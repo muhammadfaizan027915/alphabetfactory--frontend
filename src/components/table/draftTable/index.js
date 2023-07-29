@@ -3,7 +3,7 @@ const DraftTable = ({ onEdit, onRemove }) => {
     <>
       <h2 className="text-xl font-bold py-4">Drafts</h2>
       <div className="overflow-auto">
-        <table className="w-full">
+        <table className="w-full border-y-separate border-spacing-y-4">
           <tbody className="text-center text-sm">
             <tr className="bg-gray-200">
               <td className="py-2 rounded-s-lg w-1/5 min-w-[150px]">
