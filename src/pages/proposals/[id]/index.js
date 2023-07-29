@@ -9,6 +9,7 @@ import AboutUs from "../../../components/slides/aboutUs";
 import Contact from "../../../components/slides/contact";
 import Closing from "../../../components/slides/closing";
 import Reviews from "../../../components/slides/reviews";
+import Impression from "../../../components/slides/impression";
 
 const approvals = [
   {
@@ -65,7 +66,7 @@ const ApprovalPage = () => {
         onNext={onNext}
         onPrev={onPrev}
       >
-        <Reviews />
+        <Impression />
       </ProposalSlide>
     </ContentLayout>
   );
