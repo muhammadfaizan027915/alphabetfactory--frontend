@@ -6,6 +6,7 @@ import Introduction from "../../../components/slides/introduction";
 import Proposal from "../../../components/slides/proposal";
 import PlanOfAction from "../../../components/slides/planOfAction";
 import AboutUs from "../../../components/slides/aboutUs";
+import CorporateVideo from "../../../components/slides/corporateVideo";
 
 const approvals = [
   {
@@ -62,7 +63,7 @@ const ApprovalPage = () => {
         onNext={onNext}
         onPrev={onPrev}
       >
-        <AboutUs />
+        <CorporateVideo />
       </ProposalSlide>
     </ContentLayout>
   );
