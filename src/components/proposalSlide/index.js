@@ -31,7 +31,7 @@ const ProposalSlide = ({ children, onNext, onPrev }) => {
           </span>
         </button>
       </div>
-      <div className="w-full my-4 h-[calc(100vh-186px)] overflow-y-auto">{children}</div>
+      <div className="w-full mt-4 h-[calc(100vh-186px)] overflow-y-auto">{children}</div>
     </div>
   );
 };
