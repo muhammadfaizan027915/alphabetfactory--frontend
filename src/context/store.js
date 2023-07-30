@@ -17,6 +17,7 @@ const slidesName = [
   "contact",
   "reviews",
   "corporate video",
+  "impression",
   "closing",
 ];
 
