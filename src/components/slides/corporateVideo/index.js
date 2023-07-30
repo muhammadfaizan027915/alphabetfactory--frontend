@@ -1,6 +1,6 @@
-const CorporateVideo = () => {
+const CorporateVideo = ({slideAnimation}) => {
   return (
-    <div className="animate-move-in bg-white px-2 py-2 sm:p-8 md:min-h-[786px]">
+    <div className={`${slideAnimation} bg-white px-2 py-2 sm:p-8 md:min-h-[786px]`}>
       <h1 className=" text-2xl md:text-3xl font-bold">Corporate Video</h1>
       <iframe
         className="mt-4 w-full h-[550px]"

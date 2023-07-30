@@ -1,6 +1,6 @@
-const Cover = () => {
+const Cover = ({slideAnimation}) => {
   return (
-    <div className="animate-move-in">
+    <div className={slideAnimation}>
       <div className={styles.imgContainer}>
         <div className="w-[90%] md:w-96 md:ml-20 mx-auto bg-gray-500 bg-opacity-80 p-8 text-white">
           <h1 className="text-3xl font-bold">Proposal E-Learning</h1>

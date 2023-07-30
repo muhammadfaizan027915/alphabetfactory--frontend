@@ -1,6 +1,6 @@
-const Proposal = () => {
+const Proposal = ({slideAnimation}) => {
   return (
-    <div className="flex flex-col md:flex-row items-stretch min-h-[768px] animate-move-in">
+    <div className={`${slideAnimation} flex flex-col md:flex-row items-stretch min-h-[768px]`}>
       <div className="md:w-1/2 bg-white p-4 md:p-8 flex flex-col gap-4">
         <h3 className="text-3xl font-bold">The Proposal</h3>
         <p className="text-sm">

@@ -41,14 +41,14 @@ const images = [
   },
 ];
 
-const Impression = () => {
+const Impression = ({slideAnimation}) => {
   const [image, setImage] = useState(images[0]);
   const onclickImage = ({ target: { id } }) => {
     setImage(images.find((image) => image.id === Number(id)));
   };
 
   return (
-    <div className="min-h-[786px] bg-white p-4 md:p-8">
+    <div className={`${slideAnimation} min-h-[786px] bg-white p-4 md:p-8`}>
       <h1 className="text-4xl font-bold">Impression</h1>
       <div className={`mt-4 max-h-[500px] overflow-hidden relative`} >
         <img src={image.src} className="object-cover" />

@@ -1,8 +1,8 @@
 import Investmenttable from "../../table/investmentTable";
 
-const Investment = () => {
+const Investment = ({slideAnimation}) => {
   return (
-    <div className="animate-move-in h-[786px] flex flex-col lg:flex-row items-stretch">
+    <div className={`${slideAnimation} h-[786px] flex flex-col lg:flex-row items-stretch`}>
       <div className="lg:w-1/2 bg-white  p-4 md:p-8">
         <h2 className="text-2xl text-red-600 text-bold">Investment</h2>
         <p className="text-sm mt-4">

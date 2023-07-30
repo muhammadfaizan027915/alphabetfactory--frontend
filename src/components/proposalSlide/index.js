@@ -4,7 +4,7 @@ import Question from "../modal/question";
 import AcceptProposal from "../modal/acceptProposal";
 import { AppContext } from "../../context/store";
 
-const ProposalSlide = ({ children, onNext, onPrev }) => {
+const ProposalSlide = ({ children,onNext, onPrev }) => {
   const { question, accept } = useContext(AppContext);
   const [isQuestionOpen,setQuestionOpen] = question
   const [isAcceptOpen,setAcceptOpen] = accept
@@ -45,12 +45,12 @@ const ProposalSlide = ({ children, onNext, onPrev }) => {
           className="h-[36px] w-10 rounded-md bg-gray-300 flex items-center justify-center"
           onClick={onNext}
         >
-          <span className="material-symbols-outlined text-lg font-semibold">
+          <span className="material-symbols-outlined text-lg font-semibold ">
             arrow_forward_ios
           </span>
         </button>
       </div>
-      <div className="w-full mt-4 h-[calc(100vh-186px)] overflow-y-auto">
+      <div className={` w-full mt-4 h-[calc(100vh-186px)] overflow-y-auto`}>
         {children}
       </div>
 

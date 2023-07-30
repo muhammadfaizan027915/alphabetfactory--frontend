@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       animation: {
         "modal-popup": "popup  100ms linear forwards",
-        "move-in": "movein 300ms linear forwards",
+        "move-in-left": "moveinleft 300ms linear forwards",
+        "move-in-right": "moveinright 300ms linear forwards",
       },
 
       keyframes: {
@@ -18,9 +19,18 @@ module.exports = {
           },
         },
 
-        movein: {
+        moveinleft: {
           '0%': {
             transform: "translateX(-100%)"
+          },
+          "100%":{
+            transform: "translateX(0%)"
+          }
+        },
+
+        moveinright: {
+          '0%': {
+            transform: "translateX(100%)"
           },
           "100%":{
             transform: "translateX(0%)"

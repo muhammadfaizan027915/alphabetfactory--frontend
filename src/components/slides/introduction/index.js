@@ -1,7 +1,7 @@
-const Introduction = () => {
+const Introduction = ({slideAnimation}) => {
   return (
-    <div className="animate-move-in">
-      <div className="flex flex-col  md:flex-row md:items-stretch">
+    <>
+      <div className={`${slideAnimation} flex flex-col  md:flex-row md:items-stretch`}>
         <div className="md:w-[55%] min-h-80 bg-black text-white p-4 md:8 text-justify">
           <h3 className="text-lg font-semibold">Dear Faizan,</h3>
           <p className="font-light text-sm">
@@ -47,7 +47,7 @@ const Introduction = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
