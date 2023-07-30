@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext} from "react";
 import Modal from "../modal";
 import Question from "../modal/question";
 import AcceptProposal from "../modal/acceptProposal";
+import { AppContext } from "../../context/store";
 
 const ProposalSlide = ({ children, onNext, onPrev }) => {
-  const [isQuestionOpen, setQuestionOpen] = useState(false);
-  const [isAcceptOpen, setAcceptOpen] = useState(false);
+  const { question, accept } = useContext(AppContext);
+  const [isQuestionOpen,setQuestionOpen] = question
+  const [isAcceptOpen,setAcceptOpen] = accept
 
   const closeQuestion = () => setQuestionOpen((open) => !open);
   const closeAccept = () => setAcceptOpen((open) => !open);
