@@ -10,6 +10,7 @@ import SignupPage from "./pages/signUp";
 import ProposalPage from "./pages/proposals";
 import ForgetPassswordPage from "./pages/forgetPassword";
 import Proposal from "./pages/proposals/[id]";
+import ContextProvider from "./context/store";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +28,11 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ContextProvider>
+      <RouterProvider router={router} />;
+    </ContextProvider>
+  );
 };
 
 export default App;
