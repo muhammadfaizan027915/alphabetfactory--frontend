@@ -14,7 +14,7 @@ import Impression from "../../../components/slides/impression";
 import CorporateVideo from "../../../components/slides/corporateVideo";
 import Closing from "../../../components/slides/closing";
 
-const ApprovalPage = () => {
+const ProposalSlidesPage = () => {
   const Slides = {
     cover: Cover,
     introduction: Introduction,
@@ -49,11 +49,6 @@ const ApprovalPage = () => {
 
   return (
     <ContentLayout>
-      <ProposalSlide
-        approval={approval}
-        onNext={onNext}
-        onPrev={onPrev}
-      >
       <ProposalSlide onNext={onNext} onPrev={onPrev}>
         <Slide />
       </ProposalSlide>
@@ -61,4 +56,4 @@ const ApprovalPage = () => {
   );
 };
 
-export default ApprovalPage;
+export default ProposalSlidesPage;

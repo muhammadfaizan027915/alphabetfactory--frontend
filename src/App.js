@@ -9,7 +9,7 @@ import LoginPage from "./pages/login";
 import SignupPage from "./pages/signUp";
 import ProposalPage from "./pages/proposals";
 import ForgetPassswordPage from "./pages/forgetPassword";
-import Proposal from "./pages/proposals/[id]";
+import ProposalSlidesPage from "./pages/proposals/[id]";
 import ContextProvider from "./context/store";
 
 const router = createBrowserRouter(
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
       <Route path="forget-password" element={<ForgetPassswordPage />} />
       <Route path="proposals">
         <Route index element={<ProposalPage />} />
-        <Route path=":id" element={<Proposal />} />
+        <Route path=":id" element={<ProposalSlidesPage />} />
       </Route>
     </>
   )

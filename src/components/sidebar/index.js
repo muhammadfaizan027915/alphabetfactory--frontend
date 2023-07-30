@@ -14,7 +14,10 @@ const Sidebar = ({ isOpen, onClose }) => {
     onClose();
   };
 
-  const onNavClick = ({ target: { name } }) => setSelectedSlide(name);
+  const onNavClick = ({ target: { name } }) => {
+    setSelectedSlide(name);
+    onClose();
+  };
 
   return (
     <>
@@ -52,9 +55,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               <button
                 key={slide}
                 className={
-                  slide === SelectedSlide
-                    ? styles.activeLink 
-                    : styles.navLink
+                  slide === SelectedSlide ? styles.activeLink : styles.navLink
                 }
                 name={slide}
                 onClick={onNavClick}
@@ -71,8 +72,9 @@ const Sidebar = ({ isOpen, onClose }) => {
 
 const styles = {
   navLink:
-  "w-full text-left py-2 px-4 border-b-[1px] border-b-gray-300 hover:bg-red-600 hover:text-white  cursor-pointer capitalize",
-  activeLink: "bg-red-600 text-white w-full text-left py-2 px-4 border-b-[1px] border-b-gray-300  cursor-pointer capitalize",
+    "w-full text-left py-2 px-4 border-b-[1px] border-b-gray-300 hover:bg-red-600 hover:text-white  cursor-pointer capitalize",
+  activeLink:
+    "bg-red-600 text-white w-full text-left py-2 px-4 border-b-[1px] border-b-gray-300  cursor-pointer capitalize",
 };
 
 export default Sidebar;
