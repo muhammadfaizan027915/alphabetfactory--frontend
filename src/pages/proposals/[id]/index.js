@@ -10,6 +10,7 @@ import PlanOfAction from "../../../components/slides/planOfAction";
 import AboutUs from "../../../components/slides/aboutUs";
 import Contact from "../../../components/slides/contact";
 import Reviews from "../../../components/slides/reviews";
+import Impression from "../../../components/slides/impression";
 import CorporateVideo from "../../../components/slides/corporateVideo";
 import Closing from "../../../components/slides/closing";
 
@@ -24,7 +25,8 @@ const ApprovalPage = () => {
     contact: Contact,
     reviews: Reviews,
     "corporate video": CorporateVideo,
-    closing: Closing,
+    "impression": Impression,
+    closing: Closing
   };
 
   const { selectedSlide, slidesName } = useContext(AppContext);
@@ -47,6 +49,11 @@ const ApprovalPage = () => {
 
   return (
     <ContentLayout>
+      <ProposalSlide
+        approval={approval}
+        onNext={onNext}
+        onPrev={onPrev}
+      >
       <ProposalSlide onNext={onNext} onPrev={onPrev}>
         <Slide />
       </ProposalSlide>
