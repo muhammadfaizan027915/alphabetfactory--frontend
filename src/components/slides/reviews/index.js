@@ -2,7 +2,7 @@ import Testimonial from "../../testimonial";
 
 const Reviews = () => {
   return (
-    <div className="min-h-[786px]">
+    <div className="animate-move-in min-h-[786px]">
       <div className="grid md:grid-cols-12 grid-rows-1">
         <div className="md:col-span-4 bg-gray-300 p-4 lg:p-6">
           <h1 className="text-3xl font-bold">Reviews</h1>

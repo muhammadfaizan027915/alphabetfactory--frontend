@@ -1,7 +1,7 @@
 const Question = ({ onClose }) => {
   return (
     <div className="relative md:w-[600px] ml-[-0.5rem] p-4 md:p-8 rounded-2xl shadow-xl bg-white">
-      <div className="flex items-start">
+      <div className="flex items-start justify-between">
         <h2 className="mb-2  text-2xl font-semibold">
           Ask question about this proposal:
         </h2>
